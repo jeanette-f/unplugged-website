@@ -133,7 +133,12 @@ footer {
   align-items: center;
   text-align: center;
 }
-
+footer p {
+  margin: 0;
+}
+footer h4 {
+  margin: 20px 0;
+}
 footer .content-wrapper {
   width: 55%;
 }
@@ -141,9 +146,7 @@ footer .content-wrapper {
 footer .contact {
   margin-bottom: 50px;
 }
-footer h4 {
-  margin: 20px 0;
-}
+
 
 footer .social-icons {
   display: flex;
@@ -167,6 +170,7 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  height: 500px;
 }
 
 aside {
@@ -174,14 +178,6 @@ aside {
   justify-content: center;
   margin: 50px 0;
 }
-/* 
-aside h3 {
-  margin: 20px 0;
-}
-
-aside p {
-  margin-bottom: 30px;
-} */
 
 .features {
   display: flex;
@@ -197,11 +193,14 @@ aside p {
   margin: 30px 0;
 }
 
-.features .features-items {
+.features .features-list {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+}
+
+.features .features-items {
   margin-top: 40px;
 }
 
@@ -253,7 +252,9 @@ aside p {
   flex-flow: row wrap;
   margin: 50px 0 0 0;
 }
-
+.faq h2 {
+  margin-bottom: 40px;
+}
 .faq-content {
   margin-bottom: 50px;
 }
@@ -355,8 +356,141 @@ aside p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet styles here */
+  .content-wrapper {
+    margin: 100px 0;
+    width: 640px;
+  }
+  /*tablet header styles*/
+  header {
+    padding: 33px 0;
+  }
+ 
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+ 
+  .header-divider{
+    display: none;
+  }
+  header nav {
+    width: 25%;
+  }
+  header nav ul{
+    justify-content: space-evenly;
+  }
+
+  /*tablet footer styles*/
+  footer .content-wrapper {
+    width: 65%;
+  }
+  .footer-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .contact {
+    margin: 0;
+  }
+  footer h4 {
+    margin-bottom: 40px;
+  }
+  footer .copyright {
+    width: 100%;
+  }
+
+  /*tablet hero area styles*/
+  .hero-area {
+    height: 600px;
+  }
+  .hero-area h1 {
+    margin: 0;
+  }
+
+  /*tablet aside styles*/
+  aside .content-wrapper{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+  .form-description {
+    width: 40%;
+    margin: 0;
+  }
+  .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  /*tablet features styles*/
+  .features h2 {
+    margin-bottom: 20px;
+  }
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+  .features .features-items {
+    margin-top: 30px;
+    width: 50%;
+  }
+  
+  /*tablet reviews styles*/
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  /*tablet About page styles*/
+  .map {
+    height: 350px;
+  }
+  .mission h2 {
+    margin-bottom: 20px;
+  }
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  }
+
+  .mission p {
+   width: 45%;
+  }
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+  .contact-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  /*tablet FAQs page styles*/
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+  .faq-content {
+    flex-basis: 45%;
+  }
+  .faq h2 {
+    width: 100%;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Destop styles here */
 }
 
 @media print,
