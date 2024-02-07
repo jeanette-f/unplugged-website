@@ -490,7 +490,28 @@ aside {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* Destop styles here */
+  /* Desktop styles here */
+
+  .content-wrapper {
+    width: 960px;
+  }
+  
+  /*desktop header styles*/
+  header {
+    padding: 15px 0;
+  }
+  /*desktop features styles*/
+  .features article {
+    flex-basis: 33%;
+  }
+  /*desktop reviews styles*/
+  .reviews h2 {
+    margin-bottom: 50px;
+  }
+  .reviews article div {
+    width: 50%;
+}
+
 }
 
 @media print,
