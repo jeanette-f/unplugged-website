@@ -95,6 +95,8 @@ html {
 body {
  font-family: 'Open Sans', sans-serif;
  font-size: 1em;
+ color: #e2e3ed;
+ text-align: left;
 }
  
 a {
@@ -105,17 +107,19 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
  
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: 500;
 }
  
 p {
 	font-size: .875em;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
   
 address {
@@ -134,6 +138,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -148,10 +153,14 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10x 0 20px 0;
+  background-color: #3a3a3a;
 }
 
 header nav {
   width: 60%;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -170,6 +179,7 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #202322;
 }
 footer p {
   margin: 0;
@@ -190,6 +200,8 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #527158;
+  size: 1.3125em;
 }
 
 footer .social p {
@@ -211,10 +223,45 @@ footer .copyright {
   height: 500px;
 }
 
+h1 {
+  font-size: 2.25em;
+  line-height: 2.6875;
+  font-weight: 500;
+}
+
 aside {
   display: flex;
   justify-content: center;
   margin: 50px 0;
+  background-color: #527158;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+  font-size: 1.125em;
+  font-weight: 500;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .features {
@@ -237,6 +284,9 @@ aside {
   align-items: flex-start;
   flex-flow: row wrap;
 }
+.features .fontawesome-icon {
+  size: 3.75em;
+}
 
 .features .features-items {
   margin-top: 40px;
@@ -244,15 +294,18 @@ aside {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .reviews {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1.875;
 }
 
 .reviews h3 {
@@ -265,11 +318,13 @@ aside {
 .mission {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -281,6 +336,7 @@ aside {
 .faq {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -292,12 +348,15 @@ aside {
 }
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1.875;
 }
 .faq-content {
   margin-bottom: 50px;
 }
 
-
+.faq-content h4 {
+  line-height: 1.5;
+}
 
 
 
@@ -396,9 +455,23 @@ aside {
 
 @media only screen and (min-width: 768px) {
   /* Tablet styles here */
+  /* General styles */
+  h1 {
+  font-size: 3em;
+  line-height: 3;
+  }
+  h2 {
+    font-size: 2.25em;
+    line-height: 3;
+  }
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.875;
+  }
+
   .content-wrapper {
     margin: 100px 0;
-    width: 640px;
+    max-width: 640px;
   }
   /*tablet header styles*/
   header {
@@ -434,6 +507,10 @@ aside {
   }
   footer h4 {
     margin-bottom: 40px;
+    font-size: 1.5em;
+  }
+  footer p {
+    line-height: 1.125;
   }
   footer .copyright {
     width: 100%;
@@ -524,14 +601,34 @@ aside {
   .faq h2 {
     width: 100%;
 }
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: .984375em;
+  }
 
 }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
+  /* General styles */
 
+  h1 {
+    font-size: 3.75em;
+  }
+  h2 {
+    font-size: 2.25em;
+  }
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+  p {
+    font-size: 1.125em;
+    line-height: 1.5;
+  }
   .content-wrapper {
-    width: 960px;
+    max-width: 960px;
   }
   
   /*desktop header styles*/
@@ -548,7 +645,19 @@ aside {
   }
   .reviews article div {
     width: 50%;
-}
+  }
+  /*desktop about page styles*/
+  .mission h2 {
+    font-size: 3em;
+  }
+  /*desktop FAQs page styles*/
+  .faq h2 {
+    font-size: 3em;
+  }
+  .faq h4 {
+    font-size: 1.125em;
+    line-height: 1.125;
+  }
 
 }
 
