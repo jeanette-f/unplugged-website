@@ -126,9 +126,15 @@ address {
   font-style: normal;
 }
 
+img {
+  width: 100%;
+}
+figure {
+  margin: 0;
+}
 
 
-   .content-wrapper {
+.content-wrapper {
   margin: 50px 0;
   width: 90%;
 }
@@ -167,6 +173,7 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding: 0;
 }
 
 header nav ul li {
@@ -221,18 +228,23 @@ footer .copyright {
   display: flex;
   justify-content: center;
   height: 500px;
+  background-image: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #333;
 }
 
 h1 {
   font-size: 2.25em;
-  line-height: 2.6875;
+  /* line-height: 2.6875; */
   font-weight: 500;
 }
 
 aside {
   display: flex;
   justify-content: center;
-  margin: 50px 0;
+  padding: 50px 0;
   background-color: #527158;
 }
 
@@ -267,6 +279,11 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
+  background-image: url(../img/unplugged-retreat-features.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #333;
   }
 
 .features h2 {
@@ -305,7 +322,7 @@ input[type=button] {
 
 .reviews h2 {
   margin-bottom: 40px;
-  line-height: 1.875;
+  /* line-height: 1.875; */
 }
 
 .reviews h3 {
@@ -458,15 +475,15 @@ input[type=button] {
   /* General styles */
   h1 {
   font-size: 3em;
-  line-height: 3;
+  /* line-height: 3; */
   }
   h2 {
     font-size: 2.25em;
-    line-height: 3;
+    /* line-height: 3; */
   }
   h3 {
     font-size: 1.5em;
-    line-height: 1.875;
+    /* line-height: 1.875; */
   }
 
   .content-wrapper {
@@ -482,7 +499,9 @@ input[type=button] {
     width: 100%;
     justify-content: space-between;
   }
- 
+  header figure {
+    width: 30%;
+  }
   .header-divider{
     display: none;
   }
@@ -564,6 +583,16 @@ input[type=button] {
   .reviews article div {
     width: 49%;
   }
+  .reviews figure {
+    width: 50%;
+  }
+  .reviews h2 {
+    width: 80%;
+  }
+  .reviews h3 {
+    margin: 0;
+    width: auto;
+  }
 
   /*tablet About page styles*/
   .map {
@@ -644,7 +673,7 @@ input[type=button] {
     margin-bottom: 50px;
   }
   .reviews article div {
-    width: 50%;
+    width: 45%;
   }
   /*desktop about page styles*/
   .mission h2 {
