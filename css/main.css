@@ -251,7 +251,6 @@ h1 {
 aside {
   display: flex;
   justify-content: center;
-  padding: 50px 0;
   background-color: #527158;
 }
 
@@ -577,7 +576,7 @@ input[type=button] {
     width: 40%;
     margin: 0;
   }
-  .form {
+  aside .form {
     width: 40%;
     margin: 0;
   }
@@ -604,7 +603,7 @@ input[type=button] {
   }
 
   .reviews article div {
-    width: 49%;
+    width: 45%;
   }
   .reviews figure {
     width: 50%;
@@ -696,9 +695,7 @@ input[type=button] {
   .reviews h2 {
     margin-bottom: 50px;
   }
-  .reviews article div {
-    width: 45%;
-  }
+
   /*desktop about page styles*/
   .mission h2 {
     font-size: 3em;
