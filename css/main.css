@@ -611,8 +611,9 @@ input[type=button] {
   }
 
   /*tablet About page styles*/
-  .map {
-    height: 350px;
+
+  .map figure {
+    padding-bottom: 55%;
   }
   .mission h2 {
     margin-bottom: 20px;
@@ -632,7 +633,7 @@ input[type=button] {
   }
   .contact-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
   }
 
@@ -695,6 +696,11 @@ input[type=button] {
   .mission h2 {
     font-size: 3em;
   }
+
+  .map figure {
+    padding-bottom: 46%;
+  }
+
   /*desktop FAQs page styles*/
   .faq h2 {
     font-size: 3em;
